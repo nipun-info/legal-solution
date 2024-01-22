@@ -29,7 +29,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        justice: '#B68C5A'
+                        justice: '#B68C5A',
+                        'dark-100': '#414040',
+                        'dark-200': '#707070'
                     },
                     fontFamily: {
                         poppins: ['Poppins', 'sans-serif'],
@@ -45,14 +47,41 @@
 
     <!-- custom css -->
     <style>
+        .law-container {
+            max-width: 1920px;
 
+        }
     </style>
 
     <title>Justice</title>
 </head>
 
 <body>
+    <header class="container mx-auto">
+        <nav class="flex items-center justify-between font-poppins py-6 lg:px-20 px-8">
+            <!-- logo -->
+            <div class="">
+                <img src="images/logo2.png" alt="" class="">
+            </div>
+            <!-- menu -->
+            <ul class="lg:flex space-x-8 text-dark-200 text-lg font-normal hidden">
+                <li><a class="hover:text-justice duration-300" href="#">Home</a></li>
+                <li><a class="hover:text-justice duration-300" href="#">Services</a></li>
+                <li><a class="hover:text-justice duration-300" href="#">Cases</a></li>
+                <li><a class="hover:text-justice duration-300" href="#">Blog</a></li>
+                <li><a class="hover:text-justice duration-300" href="#">Contact Us</a></li>
+            </ul>
+            <!-- button -->
+            <button class="btn bg-justice text-white hover:bg-transparent border-2 hover:border-justice hover:text-justice duration-800 hidden lg:flex">
+                Free Consultation
+            </button>
 
+            <!-- burger menu -->
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
