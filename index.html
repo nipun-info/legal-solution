@@ -57,8 +57,8 @@
 </head>
 
 <body>
-    <header class="container mx-auto">
-        <nav class="flex items-center justify-between font-poppins py-6 lg:px-20 px-8">
+    <header class="container mx-auto lg:px-20 px-8">
+        <nav class="flex items-center justify-between font-poppins py-6 ">
             <!-- logo -->
             <div class="">
                 <img src="images/logo2.png" alt="" class="">
@@ -72,16 +72,66 @@
                 <li><a class="hover:text-justice duration-300" href="#">Contact Us</a></li>
             </ul>
             <!-- button -->
-            <button class="btn bg-justice text-white hover:bg-transparent border-2 hover:border-justice hover:text-justice duration-800 hidden lg:flex">
+            <button
+                class="btn bg-justice text-white hover:bg-transparent border-2 hover:border-justice hover:text-justice duration-800 hidden lg:flex">
                 Free Consultation
             </button>
 
             <!-- burger menu -->
-            <div class="lg:hidden">
+            <div class="lg:hidden cursor-pointer">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </div>
         </nav>
     </header>
+
+    <main class="container mx-auto lg:px-20 px-8">
+
+        <!-- hero section start -->
+        <section class="grid place-items-center mt-10  py-10 md:py-20 lg:py-24 w-full bg-cover bg-center rounded-lg"
+            style="background-image: url('images/banner.png');">
+            <!-- hero-content -->
+            <div class="text-center text-white">
+                <div class="max-w-[600px] flex flex-col justify-center items-center">
+                    <h1 class="text-6xl font-garamond font-bold mb-5">
+                        We Provide Effective <br> Legal Solutions
+                    </h1>
+                    <p class="mb-5 font-normal text-white opacity-90 text-lg">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <input type="text" placeholder="Search your services"
+                            class="input input-bordered input-primary w-full max-w-xs" />
+                        <button
+                            class="btn bg-justice text-white hover:bg-transparent border-2 hover:border-justice hover:text-justice duration-800 min-w-[130px]">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- this hero is daisyui.com -->
+        <!-- <div class="hero"
+            style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div> -->
+
+        
+
+
+
+
+    </main>
 </body>
 
 </html>
